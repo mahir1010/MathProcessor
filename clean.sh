@@ -1,1 +1,1 @@
-rm *.tab.* *.yy.c MathProcessor 
+rm ./src/*.tab.* ./src/*.yy.c MathProcessor 
