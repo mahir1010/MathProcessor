@@ -30,16 +30,16 @@ LETTER [a-zA-Z]
 								}
 ([1-9])([0-9])*("."{DIGIT}+)?		{yylval.val=atof(yytext); return CONST;}	
 
-[' '\t]+		{// White space}
+[' '\t]+		{}
 
-\+			{return ADD;}
-\-			{return SUB;}
-\*			{return MUL;}
-\/			{return DIV;}
-\%			{return MOD;}
-\(			{return LPAR;}
-\)			{return RPAR;}
-\=			{return EQU;}
-(\n) 		 return EOL;}
+"\+"			{return ADD;}
+"\-"			{return SUB;}
+"\*"			{return MUL;}
+"\/"			{return DIV;}
+"\%"			{return MOD;}
+"\("			{return LPAR;}
+"\)"			{return RPAR;}
+"\="			{return EQU;}
+"\n" 		 	{return EOL;}
 
 %%
